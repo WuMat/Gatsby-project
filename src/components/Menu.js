@@ -63,19 +63,22 @@ const Menu = () => {
     <MenuStyled>
       <LogoStyled>Logo</LogoStyled>
       <NavigationWrapper>
-        <StyledLink to={"/"}>
+        <StyledLink to="/" activeStyle={{ backgroundColor: "#ced0bd" }}>
           <Item>Home</Item>
         </StyledLink>
 
-        <StyledLink to={"/products/"}>
+        <StyledLink
+          to="/products/"
+          activeStyle={{ backgroundColor: "#ced0bd" }}
+        >
           <Item>Products</Item>
         </StyledLink>
 
-        <StyledLink to={"/about/"}>
+        <StyledLink to="/about/" activeStyle={{ backgroundColor: "#ced0bd" }}>
           <Item>About</Item>
         </StyledLink>
 
-        <StyledLink to={"/contact/"}>
+        <StyledLink to="/contact/" activeStyle={{ backgroundColor: "#ced0bd" }}>
           <Item>Contact</Item>
         </StyledLink>
       </NavigationWrapper>
